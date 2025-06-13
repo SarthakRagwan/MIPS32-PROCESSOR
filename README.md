@@ -126,7 +126,7 @@ Executed on clk2:\
 If it’s a LOAD, it reads from memory into the LMD (Load Memory Data).\
 If it’s a STORE, it writes data to memory (unless a branch was taken).\
 For arithmetic operations, this stage just passes values along unchanged.\
-All results go into MEM_WB_* registers.\
+All results go into MEM_WB_* registers.
 
 6. Write Back (WB Stage)\
 Executed on clk1:\
