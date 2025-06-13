@@ -40,14 +40,14 @@ IF → ID → EX → MEM → WB
 Instruction Set Breakdown:
 
 R-Type Instructions (Register-to-Register ALU Operations)
-Mnemonic 	|  Opcode  |  Format	      |    Description
--------------------------------------------------------
-ADD	      |  000000	 | ADD Rd, Rs, Rt	|  Rd = Rs + Rt
-SUB	      |  000001	 | SUB Rd, Rs, Rt	|  Rd = Rs - Rt
-AND	      |  000010	 | AND Rd, Rs, Rt	|  Rd = Rs & Rt
-OR	      |  000011	 | OR  Rd, Rs, Rt	|  Rd = Rs | Rt
-SLT	      |  000100	 | SLT Rd, Rs, Rt	|  Rd = (Rs < Rt) ? 1 : 0
-MUL	      |  000101	 | MUL Rd, Rs, Rt	|  Rd = Rs * Rt
+|Mnemonic 	|  Opcode  |  Format	      |    Description |
+|----------|----------|----------------|----------------|
+|ADD	      |  000000	 | ADD Rd, Rs, Rt	|  Rd = Rs + Rt  |
+|SUB	      |  000001	 | SUB Rd, Rs, Rt	|  Rd = Rs - Rt  |
+|AND	      |  000010	 | AND Rd, Rs, Rt	|  Rd = Rs & Rt  |
+|OR	      |  000011	 | OR  Rd, Rs, Rt	|  Rd = Rs | Rt  |
+|SLT	      |  000100	 | SLT Rd, Rs, Rt	|  Rd = (Rs < Rt) ? 1 : 0 |
+|MUL	      |  000101	 | MUL Rd, Rs, Rt	|  Rd = Rs * Rt |
 
 I-Type ALU Instructions (Register + Immediate)
 Mnemonic	Opcode	  Format	            Description
