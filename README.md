@@ -63,9 +63,10 @@ Memory Instructions
 |SW	      |001001	  |SW Rt, Imm(Rs)	  |MEM[Rs + Imm] = Rt|
 
 Branch Instructions
-Mnemonic	  Opcode	  Format	        Description
-BEQZ	      001110	  BEQZ Rs, Imm	  if (Rs == 0) PC += Imm
-BNEQZ	      001101	  BNEQZ Rs, Imm	  if (Rs != 0) PC += Imm
+|Mnemonic	|  Opcode	 | Format	      |  Description|
+|-----|----|-----|------|
+|BEQZ	      |001110	  |BEQZ Rs, Imm	  |if (Rs == 0) PC += Imm|
+|BNEQZ	     | 001101	 | BNEQZ Rs, Imm	  |if (Rs != 0) PC += Imm|
 
 Halt
 Mnemonic	  Opcode	  Format	  Description
