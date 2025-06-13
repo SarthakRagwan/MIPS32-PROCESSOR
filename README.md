@@ -117,9 +117,10 @@ All values and type are forwarded to excution stage via ID_EX_* registers.
 Executed on clk1:\
 Performs the actual ALU operation depending on the instruction type:\
 RR_ALU: uses A and B (from registers)\
-RM_ALU: uses A and Immediate\
-LOAD/STORE: calculates effective memory address\
-BRANCH: checks conditions and computes branch target\
+RM_ALU: uses A and Imm\
+LOAD: calculates effective memory address using A and Imm\
+STORE:calculates effective memory address using Imm\
+BRANCH: checks conditions and computes branch target using Imm\
 
 5. Memory Access (MEM Stage)\
 Executed on clk2:\
