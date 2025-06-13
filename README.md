@@ -108,9 +108,9 @@ If a branch is taken (BEQZ, BNEQZ), it overrides normal PC flow and fetches from
 
 3. Instruction Decode (ID Stage)\
 Executed on clk2:\
-Source register values (Rs and Rt) are read.
-Immediate values are sign-extended to 32 bits.
-Instruction type is classified (RR_ALU, LOAD, BRANCH, etc.) based on opcode.
+Source register values (Rs and Rt) are read.\
+Immediate values are sign-extended to 32 bits.\
+Instruction type is classified (RR_ALU, LOAD, BRANCH, etc.) based on opcode.\
 All values and type are forwarded to excution stage via ID_EX_* registers.
 
 4. Execute (EX Stage)\
