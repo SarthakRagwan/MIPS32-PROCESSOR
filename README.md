@@ -130,7 +130,7 @@ Halts the processor if the instruction is HLT.
 In the testbench:
 Waits until the HLT instruction sets HALTED flag.
 
-
+![BLOCK DIAGRAM](https://github.com/SarthakRagwan/MIPS32-PROCESSOR/blob/main/Block%20Diagram.jpg?raw=true)
 
 
 
