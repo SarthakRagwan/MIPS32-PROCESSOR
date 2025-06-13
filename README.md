@@ -77,10 +77,12 @@ Instruction Encoding:
 
 R-Type Format:
 | 31-26 | 25-21 | 20-16 | 15-11 | 10-0 |
+|-------|-------|-------|-------|------|
 |Opcode |   Rs  |   Rt  |   Rd  |unused|
 
 I-Type Format:
 | 31-26 | 25-21 | 20-16 |       15-0       |
+|-------|-------|-------|-------------|
 |Opcode |   Rs  |   Rt  |     Immediate    |
 
 Code Execution Flow: Step-by-Step Breakdown
