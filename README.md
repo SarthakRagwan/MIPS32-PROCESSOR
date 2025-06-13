@@ -57,9 +57,10 @@ I-Type ALU Instructions (Register + Immediate)
 |SLTI	    |001100	  |SLTI Rt, Rs, Imm	  |Rt = (Rs < Imm) ? 1 : 0|
 
 Memory Instructions
-Mnemonic	Opcode	  Format	          Description
-LW	      001000	  LW Rt, Imm(Rs)	  Rt = MEM[Rs + Imm]
-SW	      001001	  SW Rt, Imm(Rs)	  MEM[Rs + Imm] = Rt
+|Mnemonic	Opcode	  Format	          Description
+|--------|---------|-----------------|-------------|
+|LW	      |001000	  |LW Rt, Imm(Rs)	  |Rt = MEM[Rs + Imm]|
+|SW	      |001001	  |SW Rt, Imm(Rs)	  |MEM[Rs + Imm] = Rt|
 
 Branch Instructions
 Mnemonic	  Opcode	  Format	        Description
