@@ -69,8 +69,9 @@ Branch Instructions
 |BNEQZ	     | 001101	 | BNEQZ Rs, Imm	  |if (Rs != 0) PC += Imm|
 
 Halt
-Mnemonic	  Opcode	  Format	  Description
-HLT	        111111	  HLT	      Halts the processor
+|Mnemonic|	  Opcode|	  Format|	  Description|
+|---|---|----|----|
+|HLT	        |111111	  |HLT	      |Halts the processor|
 
 Instruction Encoding:
 
