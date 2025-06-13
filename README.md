@@ -50,10 +50,10 @@ R-Type Instructions (Register-to-Register ALU Operations)
 |MUL	      |  000101	 | MUL Rd, Rs, Rt	|  Rd = Rs * Rt |
 
 I-Type ALU Instructions (Register + Immediate)
-Mnemonic	Opcode	  Format	            Description
-ADDI	    001010	  ADDI Rt, Rs, Imm	  Rt = Rs + Imm
-SUBI	    001011	  SUBI Rt, Rs, Imm	  Rt = Rs - Imm
-SLTI	    001100	  SLTI Rt, Rs, Imm	  Rt = (Rs < Imm) ? 1 : 0
+|Mnemonic	|Opcode	  |Format	            |Description|
+|ADDI	    |001010	  |ADDI Rt, Rs, Imm	  |Rt = Rs + Imm|
+|SUBI	    |001011	  |SUBI Rt, Rs, Imm	  |Rt = Rs - Imm|
+|SLTI	    |001100	  |SLTI Rt, Rs, Imm	  |Rt = (Rs < Imm) ? 1 : 0|
 
 Memory Instructions
 Mnemonic	Opcode	  Format	          Description
