@@ -88,14 +88,14 @@ I-Type Format:
 Code Execution Flow: Step-by-Step Breakdown
 
 1. Initialization (test.v)
-Clock Setup:
-Two separate clocks (clk1 and clk2) simulate alternate phases of the pipeline. This models real-world hardware where stages are triggered on different clock edges.
+Clock Setup:\
+Two separate clocks (clk1 and clk2) simulate alternate phases of the pipeline. This models real-world hardware where stages are triggered on different clock edges.\
 
-Register Initialization:
-All 32 general-purpose registers are initialized to their index values (R0 = 0, R1 = 1, ... R31 = 31).
+Register Initialization:\
+All 32 general-purpose registers are initialized to their index values (R0 = 0, R1 = 1, ... R31 = 31).\
 
-Memory Initialization:
-A sample instruction sequence is loaded into memory to test basic arithmetic and control flow.
+Memory Initialization:\
+A sample instruction sequence is loaded into memory to test basic arithmetic and control flow.\
 
 2. Instruction Fetch (IF Stage)
 Executed on clk1:
