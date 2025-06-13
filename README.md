@@ -103,41 +103,41 @@ The processor fetches the instruction at the PC (Program Counter) address.
 It calculates the Next Program Counter (NPC) by incrementing PC.
 These are stored in IF_ID_* pipeline registers to forward them to the decode stage.
 
-Branch Logic:
+Branch Logic:\
 If a branch is taken (BEQZ, BNEQZ), it overrides normal PC flow and fetches from the target address instead.
 
-3. Instruction Decode (ID Stage)
-Executed on clk2:
+3. Instruction Decode (ID Stage)\
+Executed on clk2:\
 Source register values (Rs and Rt) are read.
 Immediate values are sign-extended to 32 bits.
 Instruction type is classified (RR_ALU, LOAD, BRANCH, etc.) based on opcode.
 All values and type are forwarded to excution stage via ID_EX_* registers.
 
-4. Execute (EX Stage)
-Executed on clk1:
-Performs the actual ALU operation depending on the instruction type:
-RR_ALU: uses A and B (from registers)
-RM_ALU: uses A and Immediate
-LOAD/STORE: calculates effective memory address
-BRANCH: checks conditions and computes branch target
+4. Execute (EX Stage)\
+Executed on clk1:\
+Performs the actual ALU operation depending on the instruction type:\
+RR_ALU: uses A and B (from registers)\
+RM_ALU: uses A and Immediate\
+LOAD/STORE: calculates effective memory address\
+BRANCH: checks conditions and computes branch target\
 
-5. Memory Access (MEM Stage)
-Executed on clk2:
+5. Memory Access (MEM Stage)\
+Executed on clk2:\
 If it’s a LOAD, it reads from memory into the LMD (Load Memory Data).
 If it’s a STORE, it writes data to memory (unless a branch was taken).
 For arithmetic operations, this stage just passes values along unchanged.
 All results go into MEM_WB_* registers.
 
-6. Write Back (WB Stage)
-Executed on clk1:
+6. Write Back (WB Stage)\
+Executed on clk1:\
 Writes the result (either from ALU or memory) back to the destination register.
 Halts the processor if the instruction is HLT.
 
-7. Termination and Output
-In the testbench:
+7. Termination and Output\
+In the testbench:\
 Waits until the HLT instruction sets HALTED flag.
 
-Block Diagram :
+Block Diagram :\
 ![BLOCK DIAGRAM](https://github.com/SarthakRagwan/MIPS32-PROCESSOR/blob/main/Block%20Diagram.jpg?raw=true)
 
 
