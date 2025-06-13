@@ -97,8 +97,8 @@ All 32 general-purpose registers are initialized to their index values (R0 = 0, 
 Memory Initialization:\
 A sample instruction sequence is loaded into memory to test basic arithmetic and control flow.
 
-2. Instruction Fetch (IF Stage)
-Executed on clk1:
+2. Instruction Fetch (IF Stage)\
+Executed on clk1:\
 The processor fetches the instruction at the PC (Program Counter) address.
 It calculates the Next Program Counter (NPC) by incrementing PC.
 These are stored in IF_ID_* pipeline registers to forward them to the decode stage.
