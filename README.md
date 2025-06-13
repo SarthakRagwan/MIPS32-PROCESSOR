@@ -29,9 +29,9 @@ Requirements:
 - [Icarus Verilog](http://iverilog.icarus.com/)
 - GTKWave (optional for waveform viewing)
 
-Run Steps :
-`iverilog -o test.vvp test.v`
-`vvp test.vvp`
+Run Steps :\
+`iverilog -o test.vvp test.v`\
+`vvp test.vvp`\
 `gtkwave test.vcd`   # optional
 
 Pipeline stages :
