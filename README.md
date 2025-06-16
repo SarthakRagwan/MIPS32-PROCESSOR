@@ -140,6 +140,10 @@ Waits until the HLT instruction sets HALTED flag.
 
 Block Diagram :\
 
+In test.v file, I have written the testbench to calculate the factorial of number N using the implemented MIPS32 processor.
+Where N is stored in MEM[200] and the result of factorial is stored in MEM[198]. For my testbench I took N=8 and stored it in MEM[200] that is MEM[200]=8.
+Result is stored in MEM[198] that is MEM[198]=40320.
+
 
 
 
