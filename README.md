@@ -139,7 +139,7 @@ In the testbench:\
 Waits until the HLT instruction sets HALTED flag.
 
 Block Diagram :\
-![BLOCK DIAGRAM](https://github.com/SarthakRagwan/MIPS32-PROCESSOR/blob/main/Block%20Diagram.jpg?raw=true)
+
 
 
 
