@@ -136,7 +136,7 @@ Halts the processor if the instruction is HLT.
 
 7. Termination and Output\
 In the testbench:\
-Waits until the HLT instruction sets HALTED flag.
+Waits until the HLT instruction sets HALTED flag.\
 Note : For hazard handling,Dummy instruction has been used in testbench. 
 
 Block Diagram :
