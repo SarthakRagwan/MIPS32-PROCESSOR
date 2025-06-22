@@ -138,7 +138,8 @@ Halts the processor if the instruction is HLT.
 In the testbench:\
 Waits until the HLT instruction sets HALTED flag.
 
-Block Diagram :\
+Block Diagram :
+![](https://raw.githubusercontent.com/SarthakRagwan/MIPS32-PROCESSOR/refs/heads/main/Block%20Diagram.PNG?token=GHSAT0AAAAAADGCNTN6EFOOU3QEXYEYLVLS2CXWGWA)
 
 In test.v file, I have written the testbench to calculate the factorial of number N using the implemented MIPS32 processor.
 Where N is stored in MEM[200] and the result of factorial is stored in MEM[198]. For my testbench I took N=8 and stored it in MEM[200] that is MEM[200]=8.
