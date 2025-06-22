@@ -137,6 +137,7 @@ Halts the processor if the instruction is HLT.
 7. Termination and Output\
 In the testbench:\
 Waits until the HLT instruction sets HALTED flag.
+Note : For hazard handling,Dummy instruction has been used in testbench. 
 
 Block Diagram :
 ![](https://raw.githubusercontent.com/SarthakRagwan/MIPS32-PROCESSOR/refs/heads/main/Block%20Diagram.PNG?token=GHSAT0AAAAAADGCNTN6EFOOU3QEXYEYLVLS2CXWGWA)
